@@ -2,32 +2,39 @@
  * Styles for the add-observation.html page 
  */
 
- /*
+/*
   These are for divs which separate the form groups
  */
- .outerbox{
-     border: 2px solid skyblue;
-     border-radius: 15px;
-     position: relative;
-     margin-top: 15px;
-     margin-bottom: 10px;
- }
+.outerbox {
+  border: 2px solid skyblue;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 10px;
+}
 
- .innerbox{
-    display: grid;
-    padding: 1%;
-    width: 70%;
-    margin-top: 10px;
- }
- /*For the title above the groups*/
- .title{
-     position: absolute;
-     top: -15px;
-     left: 15px;
-    z-index: 10;
-    background-color: #fff;
- }
+.innerbox {
+  padding: 1%;
+  max-width: 70%;
+  margin-top: 10px;
+}
+/*For the title above the groups*/
+.title {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  z-index: 10;
+  background-color: #fff;
+}
 /*Color for the required red asterixes*/
- .required{
-     color: red;
- }
+.required {
+  color: red;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+}

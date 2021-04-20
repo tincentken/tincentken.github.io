@@ -33,7 +33,7 @@ function showObservations(observations, title) {
 function showAll() {
   // Get all the observations from our data.js and format them so we can work with the data
   const observations = getAllObservations();
-  showObservations(observations, 'All Species');
+  showObservations(observations, "All Species");
 }
 
 // Show native species
@@ -43,7 +43,7 @@ function showOnlyNative() {
   // Filter out any that aren't native species
   const native = filterOnlyNative(observations);
 
-  showObservations(native, 'Only Native Species');
+  showObservations(native, "Only Native Species");
 }
 
 // Show introduced species
@@ -53,7 +53,7 @@ function showOnlyIntroduced() {
   // Filter out any that aren't introduced species
   const introduced = filterOnlyIntroduced(observations);
 
-  showObservations(introduced, 'Only Introduced Species');
+  showObservations(introduced, "Only Introduced Species");
 }
 
 function start() {
@@ -73,9 +73,9 @@ function start() {
   btnOnlyIntroduced.onclick = () => showOnlyIntroduced();
 
   // Connect the search form
-  const searchForm = document.querySelector('form');
+  const searchForm = document.querySelector("form");
   console.log(searchForm);
-  searchForm.onsubmit = function(event) {
+  searchForm.onsubmit = function (event) {
     // Stop the form from trying to submit over the network. We'll process the data here.
     event.preventDefault();
 
@@ -87,6 +87,6 @@ function start() {
 
   // Show all observations at first
   showAll();
-};
+}
 
 window.onload = start;
